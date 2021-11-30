@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
                         user = FirebaseAuth.getInstance().getCurrentUser();
                         reference = FirebaseDatabase.getInstance().getReference("Users");
                         userID = user.getUid();
-//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+//ФОЫЛВРФОФРФОРФЫОЛВРФЫОЛВРФОЛВРЫФОЛВРОЫФОЛВРОЛЫФВРВРОЛВРФЫОЛВРФЫОЛВР
                         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
