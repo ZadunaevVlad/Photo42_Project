@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/showmailLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="260dp"
+        android:text="Email adress:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="253dp"
+        android:layout_marginTop="612dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="71dp"
+        android:background="#CEEEF3"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/shownameLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Name:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/showmailLable"
+        app:layout_constraintTop_toBottomOf="@+id/showmailLable" />
+
+    <TextView
+        android:id="@+id/showsecLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Second name:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/showmailLable"
+        app:layout_constraintTop_toBottomOf="@+id/shownameLable" />
+
+    <TextView
+        android:id="@+id/showloginLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Login:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/showmailLable"
+        app:layout_constraintTop_toBottomOf="@+id/showsecLable" />
+
+    <TextView
+        android:id="@+id/showmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showmailLable" />
+
+    <TextView
+        android:id="@+id/showname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/showmail"
+        app:layout_constraintTop_toBottomOf="@+id/shownameLable" />
+
+    <TextView
+        android:id="@+id/showsec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/showmail"
+        app:layout_constraintTop_toBottomOf="@+id/showsecLable" />
+
+    <TextView
+        android:id="@+id/showlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/showmail"
+        app:layout_constraintTop_toBottomOf="@+id/showloginLable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
