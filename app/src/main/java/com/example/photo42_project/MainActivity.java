@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         Runnable r=new Runnable() {
             public void run(){
-                if (isOnline(ctx) != ison && ison == false){
+                if (isOnline(ctx) != ison && !ison){
                     ison = true;
                     wwait();
                 }
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
                         user = FirebaseAuth.getInstance().getCurrentUser();
                         reference = FirebaseDatabase.getInstance().getReference("Users");
                         userID = user.getUid();
-
+//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
                         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
